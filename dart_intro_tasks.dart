@@ -1,5 +1,3 @@
-
-
 void main() {
   // 1.
   List<String> users = ['anna', 'viKtor', 'Mike', 'aleX', 'dan'];
