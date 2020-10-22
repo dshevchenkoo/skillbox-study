@@ -25,15 +25,18 @@ void main() {
 
 }
 
+// 1.
 List<String> toUpperCaseFirst({List<String> users}) {
   return users.map((user) => "${user[0].toUpperCase()}${user.substring(1).toLowerCase()}").toList();
 }
 
+// 2.
 Map<String, dynamic> findUser({List<Map<String, dynamic>> users, String searchName}) {
   List<Map<String, dynamic>> neededUsers = users.where((user) => user["name"] == searchName).toList();
   return neededUsers.length == 0 ? {"name": "Anonimus", "age": 0} : neededUsers[0];
 }
 
+// 3.
 abstract class Hero {
   void say();
 }
