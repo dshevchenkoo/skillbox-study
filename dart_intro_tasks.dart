@@ -1,9 +1,12 @@
 
 
 void main() {
-  
+  // 1.
   List<String> users = ['anna', 'viKtor', 'Mike', 'aleX', 'dan'];
+  print(toUpperCaseFirst(users: users));
+  print(toUpperCaseFirst(users: []));
   
+  // 2.
   List<Map<String, dynamic>> data = [
     {"name": "Batman", "age": 30},
     {"name": "Spiderman", "age": 18},
@@ -11,14 +14,11 @@ void main() {
     {"name": "Tor", "age": 550},
     {"name": "Halk", "age": 44},
     {"name": "Iron man", "age": 35},
-];
+  ];
+  print(findUser(users: data, searchName:'Tor'));
+  print(findUser(users: [], searchName: ''));
   
-    print(toUpperCaseFirst(users: users));
-    print(toUpperCaseFirst(users: []));
-  
-      print(findUser(users: data, searchName:'Tor'));
-    print(findUser(users: [], searchName: ''));
-  
+  // 3.
   SuperMan superMan = SuperMan(speed: 1222);
   superMan.say();
 
